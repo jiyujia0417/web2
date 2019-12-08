@@ -37,8 +37,6 @@ function animate(obj,json,callback){
     }, 30) 
 }
 
-// index.html中的JavaScript代码
-
 
 var box=document.getElementById("box");
 var navList=document.getElementById("nav").children;
@@ -73,7 +71,7 @@ function pre(){
 
 //自动轮播图片
 var i=1;
-var timer=setInterval(next,2000)
+var timer=setInterval(next,3000)
 
 //滑入图片界面时红色箭头会出现，同时图片轮播取消
 box.onmousemove=function(){
@@ -86,7 +84,7 @@ box.onmousemove=function(){
 box.onmouseout=function(){
     animate(left,{opacity:0});
     animate(right,{opacity:0});
-    timer=setInterval(next,2000);
+    timer=setInterval(next,3000);
 }
 
 //点击右箭头出现下一张图片
