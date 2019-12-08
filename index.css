@@ -1,0 +1,94 @@
+/* 重置样式 */
+*{
+    padding:0;
+    margin:0;
+}
+
+li{
+    list-style: none;
+}
+
+/* 顶部灰色长条 */
+.top{
+    width:100%;
+    height: 21px;
+    background-color: lightgray;
+}
+.top img{
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.top span{
+    margin-bottom: 3px;
+    color:red;
+    font-size: 0.9em;
+}
+
+.box{
+    width:1200px;
+    height:397px;
+    margin:10px auto;
+    position: relative;
+    overflow:hidden;
+}
+
+/* 轮播图 */
+.slider{
+    width:8400px;
+    position: absolute;
+    left:-1200px;
+}
+.slide{
+    width:1200px;
+    overflow: hidden;
+    float: left;
+}
+.box>span{
+    display: block;
+    width:30px;
+    height:50px;
+    text-align: center;
+    cursor: pointer;
+    color:#ccc;
+    top:175px;
+    line-height: 50px;
+    background-color: red;
+    font-size: 30px;
+    position: absolute;
+    opacity: 0;
+}
+
+/* 左边箭头 */
+#left{
+    left:30px;
+}
+/* 右边箭头 */
+#right{
+    right:30px;
+}
+/* 下方红点 */
+.nav{
+    position: absolute;
+    left: 500px;
+    bottom: 20px;
+}
+.nav li div{
+    text-align: center;
+    color:gray;
+}
+.nav>li{
+    float: left;
+    width: 20px;
+    height:20px;
+    background-color: #ccc;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.nav .active{
+    background-color: red;
+    
+}
+.nav .active div{
+    color:white;
+}
